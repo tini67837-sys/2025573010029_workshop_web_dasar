@@ -1,0 +1,110 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+/* 🔹 FAQ (Accordion) */
+.faq details {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.faq details:focus-within {
+    border-color: #007bff;
+    box-shadow: 0 0 5px #007bff;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+details p {
+    margin-top: 10px;
+}
+
+/* 🔹 Gallery */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.img {
+    position: relative;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* gambar dari picsum */
+.img:nth-child(1) { background-image: url('https://picsum.photos/300/200?1'); }
+.img:nth-child(2) { background-image: url('https://picsum.photos/300/200?2'); }
+.img:nth-child(3) { background-image: url('https://picsum.photos/300/200?3'); }
+.img:nth-child(4) { background-image: url('https://picsum.photos/300/200?4'); }
+
+/* overlay */
+.img::before {
+    content: attr(data-title);
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.img:hover::before {
+    opacity: 1;
+}
+
+/* 🔹 Progress Bar */
+.progress {
+    position: relative;
+    background: #ddd;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: var(--progress);
+    background: #4caf50;
+    transition: 0.5s;
+}
+
+.progress span {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+}

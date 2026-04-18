@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komponen Interaktif</title>
+    <link rel="stylesheet" href="latihan-2.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Komponen Interaktif</h1>
+
+        <!-- 🔹 Accordion / FAQ -->
+        <section class="faq">
+            <h2>FAQ</h2>
+
+            <details>
+                <summary>Apa itu HTML?</summary>
+                <p>HTML adalah bahasa untuk membuat struktur halaman web.</p>
+            </details>
+
+            <details>
+                <summary>Apa itu CSS?</summary>
+                <p>CSS digunakan untuk mengatur tampilan dan layout.</p>
+            </details>
+
+            <details>
+                <summary>Apa itu JavaScript?</summary>
+                <p>JavaScript digunakan untuk membuat website interaktif.</p>
+            </details>
+        </section>
+
+        <!-- 🔹 Image Overlay -->
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <div class="grid">
+                <div class="img" data-title="Gambar 1"></div>
+                <div class="img" data-title="Gambar 2"></div>
+                <div class="img" data-title="Gambar 3"></div>
+                <div class="img" data-title="Gambar 4"></div>
+            </div>
+        </section>
+
+        <!-- 🔹 Progress Bar -->
+        <section class="progress-section">
+            <h2>Progress</h2>
+
+            <div class="progress" style="--progress: 75%;">
+                <span>75%</span>
+            </div>
+
+            <div class="progress" style="--progress: 50%;">
+                <span>50%</span>
+            </div>
+
+            <div class="progress" style="--progress: 90%;">
+                <span>90%</span>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

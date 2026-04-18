@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* BUTTON */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Variasi Button */
+.btn-primary {
+    background-color: blue;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: gray;
+    color: white;
+}
+
+.btn-danger {
+    background-color: red;
+    color: white;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+}
+
+/* Hover Effect */
+button:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+/* BADGE */
+.badge {
+    padding: 5px 10px;
+    border-radius: 12px;
+    color: white;
+    margin: 5px;
+    display: inline-block;
+}
+
+.badge-blue {
+    background-color: blue;
+}
+
+.badge-green {
+    background-color: green;
+}
+
+.badge-red {
+    background-color: red;
+}
+
+/* ALERT */
+.alert {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    color: white;
+}
+
+.success {
+    background-color: green;
+}
+
+.warning {
+    background-color: orange;
+}
+
+.error {
+    background-color: red;
+}

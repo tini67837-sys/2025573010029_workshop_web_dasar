@@ -1,0 +1,81 @@
+/* CSS VARIABLES */
+:root {
+    --main-color: #4CAF50;
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --font-main: Arial, sans-serif;
+}
+
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: var(--font-main);
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: var(--main-color);
+    color: white;
+}
+
+.menu a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.subscribe {
+    padding: 8px 15px;
+    border: none;
+    background: white;
+    color: var(--main-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* BODY */
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.content {
+    flex: 7;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sidebar {
+    flex: 3;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background: var(--main-color);
+    color: white;
+    padding: 20px;
+}
