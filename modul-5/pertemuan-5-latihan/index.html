@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page Tailwind</title>
+</head>
+
+<body class="bg-white dark:bg-gray-900 text-black dark:text-white transition">
+
+  <!-- Navbar -->
+  <header class="flex justify-between items-center p-4 md:px-10">
+    <h1 class="text-xl font-bold">Brand</h1>
+
+    <nav class="hidden md:flex gap-6">
+      <a href="#" class="hover:text-blue-500">Home</a>
+      <a href="#" class="hover:text-blue-500">About</a>
+      <a href="#" class="hover:text-blue-500">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-16 px-4 md:px-10">
+    <h2 class="text-3xl md:text-5xl font-bold mb-4">
+      Landing Page Keren
+    </h2>
+
+    <p class="text-gray-600 dark:text-gray-300 mb-6">
+      Belajar Tailwind itu cepat dan fleksibel
+    </p>
+
+    <button class="btn-primary">Mulai</button>
+  </section>
+
+  <!-- Features -->
+  <section class="py-16 px-4 md:px-10">
+    <h3 class="section-title">Fitur</h3>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card">
+        <h4 class="font-semibold mb-2">Cepat</h4>
+        <p>Tanpa nulis CSS panjang</p>
+      </div>
+
+      <div class="card">
+        <h4 class="font-semibold mb-2">Responsif</h4>
+        <p>Built-in breakpoint</p>
+      </div>
+
+      <div class="card">
+        <h4 class="font-semibold mb-2">Modern</h4>
+        <p>Utility-first design</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm text-gray-500 dark:text-gray-400">
+    © 2026 Brand. All rights reserved.
+  </footer>
+
+</body>
+</html>
