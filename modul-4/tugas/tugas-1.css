@@ -1,0 +1,183 @@
+/* CSS Variables */
+:root {
+    --primary: #4f46e5;
+    --secondary: #6366f1;
+    --bg: #f9fafb;
+    --text: #111827;
+    --white: #ffffff;
+
+    --spacing: 16px;
+    --radius: 12px;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: auto;
+    padding: var(--spacing) 0;
+}
+
+/* Navbar (Flexbox + Sticky) */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: var(--white);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text);
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: var(--primary);
+}
+
+/* Hero (Grid) */
+.hero-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.hero img {
+    width: 100%;
+    border-radius: var(--radius);
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--secondary);
+}
+
+/* Badge Animasi */
+.badge {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    background: red;
+    color: white;
+    border-radius: 20px;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Section */
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Card Grid (Grid) */
+.card-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: var(--radius);
+    transition: 0.3s;
+    position: relative;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Pseudo-element */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background: var(--primary);
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+
+/* Footer */
+.footer {
+    background: var(--primary);
+    color: white;
+}
+
+.footer-grid {
+    display: grid;
+    gap: 20px;
+}
+
+/* =====================
+   RESPONSIVE BREAKPOINT
+===================== */
+
+/* Tablet */
+@media (min-width: 768px) {
+    .hero-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
