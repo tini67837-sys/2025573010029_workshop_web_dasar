@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Interaktif</title>
+
+    <style>
+        body{
+            font-family: Arial;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background:#f0f0f0;
+        }
+
+        .calculator{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.2);
+        }
+
+        #display{
+            width:100%;
+            height:50px;
+            margin-bottom:10px;
+            font-size:24px;
+            text-align:right;
+            padding-right:10px;
+        }
+
+        .buttons{
+            display:grid;
+            grid-template-columns:repeat(4,70px);
+            gap:10px;
+        }
+
+        button{
+            height:50px;
+            font-size:20px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="calculator">
+
+    <input type="text" id="display" disabled>
+
+    <div class="buttons" id="buttons">
+
+        <button data-value="7">7</button>
+        <button data-value="8">8</button>
+        <button data-value="9">9</button>
+        <button data-value="/">÷</button>
+
+        <button data-value="4">4</button>
+        <button data-value="5">5</button>
+        <button data-value="6">6</button>
+        <button data-value="*">×</button>
+
+        <button data-value="1">1</button>
+        <button data-value="2">2</button>
+        <button data-value="3">3</button>
+        <button data-value="-">-</button>
+
+        <button data-value="0">0</button>
+        <button data-value=".">.</button>
+        <button data-value="=">=</button>
+        <button data-value="+">+</button>
+
+        <button data-value="C">C</button>
+
+    </div>
+
+</div>
+
+<script src="latihan-1.js"></script>
+
+</body>
+</html>
